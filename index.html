@@ -1,19 +1,19 @@
 ---
-layout: workshop
-root: .
-venue: NESI - ResBaz Otago
-address: University of Otago College of Education, Tower Black, 155 Union St E, Dunedin
-country: New-Zealand
-language: en
-latlng: -45.8680799, 170.5208659   # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: February 2-4, 2016
-humantime: 9am - 12pm
-startdate: 2016-02-02
-enddate: 2016-02-04
-instructor: ["Sung Eun Bae", "Aleksandra Pawlik", "Mik Black", "Tom Kelly" ]
-helper: ["TBA"]
-contact: events@nesi.org.nz
-etherpad:     https://public.etherpad-mozilla.org/p/resbaz-otago
+layout: workshop      # DON'T CHANGE THIS.
+root: .               # DON'T CHANGE THIS.
+venue: NeSI - ResBaz Dunedin Workshop        # brief name of host site without address (e.g., "Euphoric State University")
+address:  University of Otago College of Education, Tower Block, 155 Union St E # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: nz      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: en     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: 170.520855,-45.868072       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: Feb 2-4, 2016  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: 9:30am-12:30pm    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2015-02-02      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2015-02-02        # use YYYY-MM-DD format like 2015-01-02
+instructor: Sung Bae, Aleksandra Pawlik, Mik Black, Tom Kelly, Murray Cadzow, Elizabeth Permina, David Eyers, Rudiger Brauning # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: Tanya Flynn, Riku Takei, Anthony Shaw, Tyler McInnes     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: res.baz@otago.ac.nz      # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
@@ -144,22 +144,30 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="schedule">Schedule</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00-12:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+     <tr> <td>Arrival</td>  <td><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></td> </tr>
+      <tr> <td>09:30</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>10:45</td> <td>Morning tea</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00-12:00</td>  <td>Programming with R</td> </tr>
+      <tr> <td>09:30</td>  <td>Building programs with R</td> </tr>
+      <tr> <td>10:45</td> <td>Morning tea</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+    <div class="col-md-4">
     <h3>Day 3</h3>
     <table class="table table-striped">
-      <tr> <td>09:00-12:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>09:30</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>10:45</td> <td>Morning tea</td> </tr>
+      <tr> <td>Departure</td>  <td><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
     </table>
   </div>
 </div>
@@ -220,21 +228,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
 
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
@@ -247,20 +240,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
-     </ul>
-   </div>
-   -->
 </div>
 
 <div class="row">
@@ -280,6 +259,35 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </div>
   <!--
   <div class="col-md-6">
+    <h3 id="syllabus-python">Programming in Python</h3>
+    <ul>
+      <li>Using libraries</li>
+      <li>Working with arrays</li>
+      <li>Reading and plotting data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals</li>
+      <li>Defensive programming</li>
+      <li>Using Python from the command line</li>
+      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
+    </ul>
+  </div>
+  -->
+
+  <!--
+  <div class="col-md-6">
+    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
+    <ul>
+      <li>Working with arrays</li>
+      <li>Reading and plotting data</li>
+      <li>Creating and using functions</li>
+      <li>Loops and conditionals</li>
+      <li>Defensive programming</li>
+      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
+     </ul>
+   </div>
+   -->
+  <!--
+  <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
       <li>Reading and sorting data</li>
@@ -293,8 +301,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
   </div>
-  -->
-</div
+-->
+</div>
+
 
 <hr/>
 
@@ -509,11 +518,55 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </div>
 </div> <!-- End of 'editor' section. -->
 
+<div id="r"> <!-- Start of 'R' section. -->
+  <h3>R</h3>
+
+  <p>
+    <a href="http://www.r-project.org">R</a> is a programming language
+    that is especially powerful for data exploration, visualization, and
+    statistical analysis. To interact with R, we use
+    <a href="http://www.rstudio.com/">RStudio</a>.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="r-windows">Windows</h4>
+      <p>
+        Install R by downloading and running
+        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="r-macosx">Mac OS X</h4>
+      <p>
+        Install R by downloading and running
+        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="r-linux">Linux</h4>
+      <p>
+        You can download the binary files for your distribution
+        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
+        you can use your package manager (e.g. for Debian/Ubuntu
+        run <code>sudo apt-get install r-base</code> and for Fedora run
+        <code>sudo yum install R</code>).  Also, please install the
+        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'R' section. -->
+
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
            Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
-<!--	   
   <h3>Python</h3>
 
   <p>
@@ -593,56 +646,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
   </p>
-  -->
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
+<!-- Start of 'SQLite' section. -->
 <!--
+<div id="sql"> 
   <h3>SQLite</h3>
 
   <p>
@@ -677,8 +685,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <p><strong>If you installed Anaconda, it also has a copy of SQLite
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
+</div>
 -->
-</div> <!-- End of 'SQLite' section. -->
+<!-- End of 'SQLite' section. -->
+
 
 <!--
   Uncomment this section if you are using our virtual machine.
